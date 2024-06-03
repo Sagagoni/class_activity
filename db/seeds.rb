@@ -7,3 +7,11 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+User.destroy_all 
+
+User.create name: 'Example'
+User.create name: 'John McEnrow'
+User.create name: 'Peter Gabriel'
+User.create name: 'Pedro Picapiedras'
+

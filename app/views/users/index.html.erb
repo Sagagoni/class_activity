@@ -1,0 +1,28 @@
+<h1>Users</h1>
+
+<div id="users-container">
+  <ul id="user-list">
+    
+  </ul>
+</div>
+
+<button id="load-button">Load Users</button>
+
+<script>
+  document.getElementById('load-button').addEventListener('click', function() {
+    fetch('<%= show_user_path(format: :json) %>')
+      .then(response => response.json())
+      .then(users => {
+        const userList = document.getElementById('user-list');
+        userList.innerHTML = ''; 
+        users.forEach(user => {
+          const newUser = document.createElement('li');
+          newUser.textContent = user.name; 
+          userList.appendChild(newUser);
+        });
+      })
+      .catch(error => {
+        console.error('Error loading users:', error);
+      });
+  });
+</script>
