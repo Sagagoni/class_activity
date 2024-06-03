@@ -1,5 +1,10 @@
 # README
 
+INTEGRANTES: 
+Javier De Bernardi 
+Mikaela Stambuk 
+Saga Goni
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
