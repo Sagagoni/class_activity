@@ -1885,3 +1885,62 @@ Processing by UsersController#show as JSON
 Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 1.3ms | Allocations: 814)
 
 
+Started GET "/" for 127.0.0.1 at 2024-06-03 10:04:50 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 783)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 1012)
+
+
+Started GET "/users/show.json" for 127.0.0.1 at 2024-06-03 10:04:54 -0400
+Processing by UsersController#show as JSON
+  [1m[36mUser Load (27.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:12:in `block (2 levels) in show'
+Completed 200 OK in 47ms (Views: 18.6ms | ActiveRecord: 27.7ms | Allocations: 813)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-03 10:05:29 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 768)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 998)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-03 10:05:29 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 762)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 991)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-03 10:06:40 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 756)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 985)
+
+
+Started GET "/users/show.json" for 127.0.0.1 at 2024-06-03 10:06:42 -0400
+Processing by UsersController#show as JSON
+  [1m[36mUser Load (17.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:12:in `block (2 levels) in show'
+Completed 200 OK in 25ms (Views: 6.5ms | ActiveRecord: 17.7ms | Allocations: 813)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-03 10:07:59 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 53)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 756)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 985)
+
+
